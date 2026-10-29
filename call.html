@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TODO: remove this noindex line when the site is final and announced -->
+<meta name="robots" content="noindex, nofollow">
+<title>Call for Participation · SIMBig 2026 Shared Task</title>
+<meta name="description" content="Tasks, timeline and submission requirements of the SIMBig 2026 Shared Task.">
+<link rel="stylesheet" href="assets/style.css?v=2026-10-29l">
+<script src="assets/site.js?v=2026-10-29l"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site">
+<div class="bar">
+  <a class="brand" href="index.html"><b>SIMBig 2026</b> · Shared Task</a>
+  <button type="button" class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+    <ul>
+      <li class="has-sub">
+        <a href="index.html">Results</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-index"><span class="sr-only">Results sections</span></button>
+        <ul class="sub" id="sub-index">
+          <li><a href="index.html#overview">Overview</a></li>
+          <li><a href="index.html#task1">Task 1</a></li>
+          <li><a href="index.html#task2">Task 2</a></li>
+          <li><a href="index.html#task3">Task 3</a></li>
+          <li><a href="index.html#awards">Awards</a></li>
+          <li><a href="index.html#cite">How to cite</a></li>
+          <li><a href="index.html#ack">Acknowledgements</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="call.html" aria-current="page">Call for participation</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-call"><span class="sr-only">Call for participation sections</span></button>
+        <ul class="sub" id="sub-call">
+          <li><a href="call.html#about">About</a></li>
+          <li><a href="call.html#tasks">Tasks</a></li>
+          <li><a href="call.html#dates">Important dates</a></li>
+          <li><a href="call.html#submission">Submission</a></li>
+          <li><a href="call.html#review">Review &amp; publication</a></li>
+          <li><a href="call.html#awards">Awards</a></li>
+          <li><a href="call.html#organisers">Organisers</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="data.html">Data &amp; baselines</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-data"><span class="sr-only">Data &amp; baselines sections</span></button>
+        <ul class="sub" id="sub-data">
+          <li><a href="data.html#datasets">Training data</a></li>
+          <li><a href="data.html#test-set">Test set</a></li>
+          <li><a href="data.html#baselines">Baselines</a></li>
+          <li><a href="data.html#evaluation">Evaluation</a></li>
+          <li><a href="data.html#task2-data">Task 2 data</a></li>
+          <li><a href="data.html#cite-data">Citation &amp; licence</a></li>
+        </ul>
+      </li>
+      <!-- Hidden from the menu for now:
+      <li class="has-sub">
+        <a href="videos.html">Videos</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-videos"><span class="sr-only">Videos sections</span></button>
+        <ul class="sub" id="sub-videos">
+          <li><a href="videos.html#intro">Introduction</a></li>
+          <li><a href="videos.html#v-task1">Task 1</a></li>
+          <li><a href="videos.html#v-task3">Task 3</a></li>
+          <li><a href="videos.html#playlist">Full playlist</a></li>
+        </ul>
+      </li>
+      -->
+    </ul>
+  </nav>
+  <div class="a11y">
+    <button type="button" id="a11y-btn" aria-expanded="false" aria-controls="a11y-panel" title="Accessibility options"><span aria-hidden="true">⚙️</span><span class="sr-only">Accessibility options</span></button>
+    <div id="a11y-panel" hidden>
+      <h2>Accessibility options</h2>
+      <fieldset>
+        <legend>Text size</legend>
+        <div class="seg">
+          <label><input type="radio" name="a11y-text" value="-1"><span aria-hidden="true">A−</span><span class="sr-only">Small</span></label>
+          <label><input type="radio" name="a11y-text" value="0"><span aria-hidden="true">A</span><span class="sr-only">Default</span></label>
+          <label><input type="radio" name="a11y-text" value="1"><span aria-hidden="true">A+</span><span class="sr-only">Large</span></label>
+          <label><input type="radio" name="a11y-text" value="2"><span aria-hidden="true">A++</span><span class="sr-only">Larger</span></label>
+          <label><input type="radio" name="a11y-text" value="3"><span aria-hidden="true">A+++</span><span class="sr-only">Largest</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Theme</legend>
+        <div class="seg">
+          <label><input type="radio" name="a11y-theme" value="auto"><span>Auto</span></label>
+          <label><input type="radio" name="a11y-theme" value="light"><span>Light</span></label>
+          <label><input type="radio" name="a11y-theme" value="dark"><span>Dark</span></label>
+        </div>
+      </fieldset>
+      <label class="check"><input type="checkbox" name="a11y-contrast" value="high"> High contrast</label>
+      <label class="check"><input type="checkbox" name="a11y-links" value="underline"> Underline all links</label>
+      <label class="check"><input type="checkbox" name="a11y-spacing" value="wide"> Wider text spacing</label>
+      <label class="check"><input type="checkbox" name="a11y-motion" value="reduce"> Stop animations</label>
+      <button type="button" id="a11y-reset">Reset to defaults</button>
+    </div>
+  </div>
+</div>
+</header>
+<main id="main" class="page">
+
+<img class="banner" src="img/banner.jpg" width="1536" height="384" alt="SIMBig and QuechuaBase banner: Shared Task on ASR and Language Resources for Indigenous Languages of South America">
+<p class="eyebrow">SIMBig 2026 · Arequipa, Peru · 28–30 October 2026</p>
+<h1>Call for Participation</h1>
+<p class="sub">Automatic Speech Recognition (ASR) and Language Resources for Indigenous Languages of South America</p>
+
+<div class="box">
+  <p style="margin:0"><strong>Submissions are closed.</strong> The results were announced at SIMBig 2026; see the <a href="index.html">results page</a>.
+  This page summarises the call. The official version is on <a href="https://simbig.org/SIMBig2026/en/sharedtask.html">simbig.org</a>.</p>
+</div>
+
+<h2 id="about">About the shared task</h2>
+<p>This shared task promotes speech technologies and open resources for Indigenous languages of South America, starting with Puno Quechua.
+It encourages reproducible, open research and collaboration with Indigenous language communities.</p>
+
+<h2 id="tasks">Tasks</h2>
+<div class="cards-3">
+  <article class="card">
+    <span class="badge">Task 1</span>
+    <h3>Puno Quechua ASR</h3>
+    <p>Build an ASR system using the Mozilla Common Voice Puno Quechua datasets (scripted and spontaneous speech).
+    Baseline models and evaluation scripts are provided. Systems are ranked by WER on a held-out test set, and must be reproducible.</p>
+    <p class="meta"><a href="data.html">Data &amp; baselines</a> · <a href="index.html#task1">Results</a></p>
+  </article>
+  <article class="card">
+    <span class="badge">Task 2</span>
+    <h3>ASR for any South American Indigenous language</h3>
+    <p>Develop an ASR system for an Indigenous or native South American language that does not yet have one.
+    Teams must share their train/dev/test splits, and the test set must be at least 30 minutes long.</p>
+    <p class="meta"><a href="index.html#task2">Outcome</a></p>
+  </article>
+  <article class="card">
+    <span class="badge">Task 3</span>
+    <h3>Educational and literacy resources</h3>
+    <p>Create a resource, such as a website, tutorial, notebook, visualisation, video or learning platform,
+    that helps people learn or explore an Indigenous language, or reuse its datasets.</p>
+    <p class="meta"><a href="index.html#task3">Results</a></p>
+  </article>
+</div>
+
+<h2 id="dates">Important dates</h2>
+<p class="muted">All deadlines are Anywhere on Earth (AoE).</p>
+<div class="wrap">
+<table class="plain">
+<thead><tr><th scope="col">Date</th><th scope="col">Milestone</th></tr></thead>
+<tbody>
+<tr><td><time datetime="2026-08-10">10 August 2026</time></td><td>Registration opens</td></tr>
+<tr><td><time datetime="2026-08-24">24 August 2026</time></td><td>Datasets released; orientation hour</td></tr>
+<tr><td><time datetime="2026-09-16">16 September 2026</time></td><td>Orientation hour</td></tr>
+<tr><td><time datetime="2026-09-21">21 September 2026</time></td><td>Registration deadline</td></tr>
+<tr><td><time datetime="2026-09-30">30 September 2026</time></td><td>Task 1 test set released</td></tr>
+<tr><td><time datetime="2026-10-11">11 October 2026</time></td><td>Initial abstract deadline (CMT)</td></tr>
+<tr><td><time datetime="2026-10-18">18 October 2026</time></td><td>Final transcriptions (Task 1), system description paper and video due</td></tr>
+<tr class="win"><td><time datetime="2026-10-28">28–30 October 2026</time></td><td>Results announced at SIMBig 2026, Arequipa, Peru</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="submission">What participants submitted</h2>
+<div class="wrap">
+<table class="plain">
+<thead><tr><th scope="col">Item</th><th scope="col">Tasks</th><th scope="col">Details</th></tr></thead>
+<tbody>
+<tr><td>Abstract</td><td>All</td><td>Short preliminary description of the approach, via CMT, due 11 October. Could be revised until the final deadline.</td></tr>
+<tr><td>Transcriptions</td><td>Task 1</td><td>Predicted transcriptions of the test set as a TSV file, via the submission form (see <a href="data.html#evaluation">evaluation</a>).</td></tr>
+<tr><td>System description paper</td><td>All</td><td>4–8 pages in the Springer LNCS template, via CMT. It could be an expanded version of the abstract.</td></tr>
+<tr><td>Video presentation</td><td>All</td><td>15-minute presentation of the paper, via the submission form.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="review">Review and publication</h2>
+<p>Each paper was evaluated by at least two independent reviewers on originality, technical quality, significance and relevance.
+All manuscripts were screened with plagiarism detection software. Papers from the winning teams will be published, after revision in response to
+reviewer feedback, in the Springer <em>Communications in Computer and Information Science</em> (CCIS) series.</p>
+
+<h2 id="awards">Awards</h2>
+<ul>
+  <li>Task 1: USD 100</li>
+  <li>Task 2: USD 100</li>
+  <li>Task 3: USD 50</li>
+</ul>
+<p>Winning teams also receive free registration to SIMBig 2026. See the <a href="index.html#awards">award winners</a>.</p>
+
+<h2 id="organisers">Organisers</h2>
+<p><strong>Programme Chairs:</strong> Elwin Huaman (University of Cambridge, UK), Johanna Cordova (ERTIM, Inalco, France),
+Juan Antonio Lossio-Ventura (National Institutes of Health, USA), Hugo Alatrista-Salas (De Vinci Research Centre, France).<br>
+<strong>Programme Committee:</strong> Johanna Cordova, Elwin Huaman.<br>
+<strong>Advisory Committee:</strong> Anna Korhonen (University of Cambridge, UK), Damien Nouvel (ERTIM, Inalco, France).</p>
+</main>
+<footer class="site">
+  Contact: Elwin Huaman ·
+  Videos: <a href="https://www.youtube.com/@QuechuaBase">youtube.com/@QuechuaBase</a> ·
+  Official call: <a href="https://simbig.org/SIMBig2026/en/sharedtask.html">simbig.org</a> ·
+  Last updated: 29 October 2026
+</footer>
+</body>
+</html>

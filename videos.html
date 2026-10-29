@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TODO: remove this noindex line when the site is final and announced -->
+<meta name="robots" content="noindex, nofollow">
+<title>Video Presentations · SIMBig 2026 Shared Task</title>
+<meta name="description" content="Video presentations of the winning and featured submissions to the SIMBig 2026 Shared Task.">
+<link rel="stylesheet" href="assets/style.css?v=2026-10-29l">
+<script src="assets/site.js?v=2026-10-29l"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site">
+<div class="bar">
+  <a class="brand" href="index.html"><b>SIMBig 2026</b> · Shared Task</a>
+  <button type="button" class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+    <ul>
+      <li class="has-sub">
+        <a href="index.html">Results</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-index"><span class="sr-only">Results sections</span></button>
+        <ul class="sub" id="sub-index">
+          <li><a href="index.html#overview">Overview</a></li>
+          <li><a href="index.html#task1">Task 1</a></li>
+          <li><a href="index.html#task2">Task 2</a></li>
+          <li><a href="index.html#task3">Task 3</a></li>
+          <li><a href="index.html#awards">Awards</a></li>
+          <li><a href="index.html#cite">How to cite</a></li>
+          <li><a href="index.html#ack">Acknowledgements</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="call.html">Call for participation</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-call"><span class="sr-only">Call for participation sections</span></button>
+        <ul class="sub" id="sub-call">
+          <li><a href="call.html#about">About</a></li>
+          <li><a href="call.html#tasks">Tasks</a></li>
+          <li><a href="call.html#dates">Important dates</a></li>
+          <li><a href="call.html#submission">Submission</a></li>
+          <li><a href="call.html#review">Review &amp; publication</a></li>
+          <li><a href="call.html#awards">Awards</a></li>
+          <li><a href="call.html#organisers">Organisers</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="data.html">Data &amp; baselines</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-data"><span class="sr-only">Data &amp; baselines sections</span></button>
+        <ul class="sub" id="sub-data">
+          <li><a href="data.html#datasets">Training data</a></li>
+          <li><a href="data.html#test-set">Test set</a></li>
+          <li><a href="data.html#baselines">Baselines</a></li>
+          <li><a href="data.html#evaluation">Evaluation</a></li>
+          <li><a href="data.html#task2-data">Task 2 data</a></li>
+          <li><a href="data.html#cite-data">Citation &amp; licence</a></li>
+        </ul>
+      </li>
+      <!-- Hidden from the menu for now:
+      <li class="has-sub">
+        <a href="videos.html" aria-current="page">Videos</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-videos"><span class="sr-only">Videos sections</span></button>
+        <ul class="sub" id="sub-videos">
+          <li><a href="videos.html#intro">Introduction</a></li>
+          <li><a href="videos.html#v-task1">Task 1</a></li>
+          <li><a href="videos.html#v-task3">Task 3</a></li>
+          <li><a href="videos.html#playlist">Full playlist</a></li>
+        </ul>
+      </li>
+      -->
+    </ul>
+  </nav>
+  <div class="a11y">
+    <button type="button" id="a11y-btn" aria-expanded="false" aria-controls="a11y-panel" title="Accessibility options"><span aria-hidden="true">⚙️</span><span class="sr-only">Accessibility options</span></button>
+    <div id="a11y-panel" hidden>
+      <h2>Accessibility options</h2>
+      <fieldset>
+        <legend>Text size</legend>
+        <div class="seg">
+          <label><input type="radio" name="a11y-text" value="-1"><span aria-hidden="true">A−</span><span class="sr-only">Small</span></label>
+          <label><input type="radio" name="a11y-text" value="0"><span aria-hidden="true">A</span><span class="sr-only">Default</span></label>
+          <label><input type="radio" name="a11y-text" value="1"><span aria-hidden="true">A+</span><span class="sr-only">Large</span></label>
+          <label><input type="radio" name="a11y-text" value="2"><span aria-hidden="true">A++</span><span class="sr-only">Larger</span></label>
+          <label><input type="radio" name="a11y-text" value="3"><span aria-hidden="true">A+++</span><span class="sr-only">Largest</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Theme</legend>
+        <div class="seg">
+          <label><input type="radio" name="a11y-theme" value="auto"><span>Auto</span></label>
+          <label><input type="radio" name="a11y-theme" value="light"><span>Light</span></label>
+          <label><input type="radio" name="a11y-theme" value="dark"><span>Dark</span></label>
+        </div>
+      </fieldset>
+      <label class="check"><input type="checkbox" name="a11y-contrast" value="high"> High contrast</label>
+      <label class="check"><input type="checkbox" name="a11y-links" value="underline"> Underline all links</label>
+      <label class="check"><input type="checkbox" name="a11y-spacing" value="wide"> Wider text spacing</label>
+      <label class="check"><input type="checkbox" name="a11y-motion" value="reduce"> Stop animations</label>
+      <button type="button" id="a11y-reset">Reset to defaults</button>
+    </div>
+  </div>
+</div>
+</header>
+<main id="main" class="page">
+
+<img class="banner" src="img/banner.jpg" width="1536" height="384" alt="SIMBig and QuechuaBase banner: Shared Task on ASR and Language Resources for Indigenous Languages of South America">
+<p class="eyebrow">SIMBig 2026 Shared Task</p>
+<h1>Video Presentations</h1>
+<p class="sub">Presentations from the winning teams, given online at the <a href="index.html#session">Shared Task session</a> on 30 October 2026. All videos are also on our YouTube channel,
+<a href="https://www.youtube.com/@QuechuaBase">@QuechuaBase</a>.</p>
+
+<h2 id="intro">Introduction from the organisers</h2>
+<article class="card">
+  <div class="grid">
+    <div class="video">
+      <!-- TODO: replace with
+      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="SIMBig 2026 Shared Task: introduction from the organisers" loading="lazy"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      Video: <span class="todo">YouTube embed</span>
+    </div>
+    <div>
+      <h3>The SIMBig 2026 Shared Task in three minutes</h3>
+      <p class="abstract">An overview of the three tasks, the Puno Quechua data and the main results.
+      <span class="todo">TODO: confirm, or remove this section if there is no intro video</span></p>
+      <p class="meta"><a href="TODO-video">Watch on YouTube</a></p>
+    </div>
+  </div>
+</article>
+
+<h2 id="v-task1">Task 1: Puno Quechua ASR Baseline</h2>
+<article class="card winner">
+  <span class="badge">🥇 Task 1 Winner</span>
+  <div class="grid">
+    <div class="video"><!-- TODO: YouTube iframe (see the introduction above) -->Video coming soon</div>
+    <div>
+      <h3>Yachachiq–Yachakuq: Teacher–Student Transfer and Candidate Reranking for Puno Quechua ASR</h3>
+      <p class="authors">Team Chana-NLP (PUCP, University of Edinburgh) · Best model: Chana-L · WER 11.93%</p>
+      <p class="meta"><a href="index.html#winner-task1">Details</a> · Video coming soon</p>
+    </div>
+  </div>
+</article>
+<!-- Optional: featured Task 1 videos. Copy the card above, change the class to "card" and the badge to "Featured submission". -->
+
+<h2 id="v-task3">Task 3: Educational/Literacy Resource based on Language Datasets</h2>
+<article class="card winner">
+  <span class="badge">🥇 Task 3 Winner</span>
+  <div class="grid">
+    <div class="video"><!-- TODO: YouTube iframe -->Video coming soon</div>
+    <div>
+      <h3>Wasi-y-kuna-pi: Hearing Every Suffix in a Talking Morphology Reader for Puno Quechua</h3>
+      <p class="authors">Team CSILAB (CSI Lab) · Language: Puno Quechua</p>
+      <p class="meta"><a href="index.html#winner-task3">Details</a> · Video coming soon</p>
+    </div>
+  </div>
+</article>
+<!-- Featured video card (hidden until there are entries):
+<article class="card">
+  <span class="badge">Featured submission</span>
+  <div class="grid">
+    <div class="video"><!~~ TODO: YouTube iframe ~~>Video coming soon</div>
+    <div>
+      <h3><span class="todo">TODO: Title</span></h3>
+      <p class="authors"><span class="todo">TODO: Authors (Affiliations)</span> · Language(s): <span class="todo">TODO</span></p>
+      <p class="meta"><a href="index.html#task3">Abstract &amp; resource</a> · <a href="TODO-video">Watch on YouTube</a></p>
+    </div>
+  </div>
+</article>
+-->
+<!-- Duplicate the card above for each additional featured video. -->
+
+<h2 id="playlist">Full playlist</h2>
+<div class="video" style="max-width:720px">
+  <!-- TODO: replace with the playlist embed:
+  <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLAYLIST_ID" title="SIMBig 2026 Shared Task playlist" loading="lazy"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  Playlist: <span class="todo">YouTube playlist embed</span>
+</div>
+<p class="muted">Videos are published with the consent of the presenting teams under <span class="todo">TODO: licence, e.g. CC BY 4.0</span>.
+Captions are available in English and Spanish <span class="todo">TODO confirm</span>.</p>
+</main>
+<footer class="site">
+  Contact: Elwin Huaman ·
+  Videos: <a href="https://www.youtube.com/@QuechuaBase">youtube.com/@QuechuaBase</a> ·
+  Official call: <a href="https://simbig.org/SIMBig2026/en/sharedtask.html">simbig.org</a> ·
+  Last updated: 29 October 2026
+</footer>
+</body>
+</html>

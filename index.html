@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TODO: remove this noindex line when the site is final and announced -->
+<meta name="robots" content="noindex, nofollow">
+<title>SIMBig 2026 Shared Task Results</title>
+<meta name="description" content="Results of the SIMBig 2026 Shared Task on ASR and Language Resources for Indigenous Languages of South America.">
+<link rel="stylesheet" href="assets/style.css?v=2026-10-29l">
+<script src="assets/site.js?v=2026-10-29l"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site">
+<div class="bar">
+  <a class="brand" href="index.html"><b>SIMBig 2026</b> · Shared Task</a>
+  <button type="button" class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+    <ul>
+      <li class="has-sub">
+        <a href="index.html" aria-current="page">Results</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-index"><span class="sr-only">Results sections</span></button>
+        <ul class="sub" id="sub-index">
+          <li><a href="index.html#overview">Overview</a></li>
+          <li><a href="index.html#task1">Task 1</a></li>
+          <li><a href="index.html#task2">Task 2</a></li>
+          <li><a href="index.html#task3">Task 3</a></li>
+          <li><a href="index.html#awards">Awards</a></li>
+          <li><a href="index.html#cite">How to cite</a></li>
+          <li><a href="index.html#ack">Acknowledgements</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="call.html">Call for participation</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-call"><span class="sr-only">Call for participation sections</span></button>
+        <ul class="sub" id="sub-call">
+          <li><a href="call.html#about">About</a></li>
+          <li><a href="call.html#tasks">Tasks</a></li>
+          <li><a href="call.html#dates">Important dates</a></li>
+          <li><a href="call.html#submission">Submission</a></li>
+          <li><a href="call.html#review">Review &amp; publication</a></li>
+          <li><a href="call.html#awards">Awards</a></li>
+          <li><a href="call.html#organisers">Organisers</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="data.html">Data &amp; baselines</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-data"><span class="sr-only">Data &amp; baselines sections</span></button>
+        <ul class="sub" id="sub-data">
+          <li><a href="data.html#datasets">Training data</a></li>
+          <li><a href="data.html#test-set">Test set</a></li>
+          <li><a href="data.html#baselines">Baselines</a></li>
+          <li><a href="data.html#evaluation">Evaluation</a></li>
+          <li><a href="data.html#task2-data">Task 2 data</a></li>
+          <li><a href="data.html#cite-data">Citation &amp; licence</a></li>
+        </ul>
+      </li>
+      <!-- Hidden from the menu for now:
+      <li class="has-sub">
+        <a href="videos.html">Videos</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-videos"><span class="sr-only">Videos sections</span></button>
+        <ul class="sub" id="sub-videos">
+          <li><a href="videos.html#intro">Introduction</a></li>
+          <li><a href="videos.html#v-task1">Task 1</a></li>
+          <li><a href="videos.html#v-task3">Task 3</a></li>
+          <li><a href="videos.html#playlist">Full playlist</a></li>
+        </ul>
+      </li>
+      -->
+    </ul>
+  </nav>
+  <div class="a11y">
+    <button type="button" id="a11y-btn" aria-expanded="false" aria-controls="a11y-panel" title="Accessibility options"><span aria-hidden="true">⚙️</span><span class="sr-only">Accessibility options</span></button>
+    <div id="a11y-panel" hidden>
+      <h2>Accessibility options</h2>
+      <fieldset>
+        <legend>Text size</legend>
+        <div class="seg">
+          <label><input type="radio" name="a11y-text" value="-1"><span aria-hidden="true">A−</span><span class="sr-only">Small</span></label>
+          <label><input type="radio" name="a11y-text" value="0"><span aria-hidden="true">A</span><span class="sr-only">Default</span></label>
+          <label><input type="radio" name="a11y-text" value="1"><span aria-hidden="true">A+</span><span class="sr-only">Large</span></label>
+          <label><input type="radio" name="a11y-text" value="2"><span aria-hidden="true">A++</span><span class="sr-only">Larger</span></label>
+          <label><input type="radio" name="a11y-text" value="3"><span aria-hidden="true">A+++</span><span class="sr-only">Largest</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Theme</legend>
+        <div class="seg">
+          <label><input type="radio" name="a11y-theme" value="auto"><span>Auto</span></label>
+          <label><input type="radio" name="a11y-theme" value="light"><span>Light</span></label>
+          <label><input type="radio" name="a11y-theme" value="dark"><span>Dark</span></label>
+        </div>
+      </fieldset>
+      <label class="check"><input type="checkbox" name="a11y-contrast" value="high"> High contrast</label>
+      <label class="check"><input type="checkbox" name="a11y-links" value="underline"> Underline all links</label>
+      <label class="check"><input type="checkbox" name="a11y-spacing" value="wide"> Wider text spacing</label>
+      <label class="check"><input type="checkbox" name="a11y-motion" value="reduce"> Stop animations</label>
+      <button type="button" id="a11y-reset">Reset to defaults</button>
+    </div>
+  </div>
+</div>
+</header>
+<main id="main" class="page">
+
+<img class="banner" src="img/banner.jpg" width="1536" height="384" alt="SIMBig and QuechuaBase banner: Shared Task on ASR and Language Resources for Indigenous Languages of South America">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <p class="eyebrow">SIMBig 2026 · Arequipa, Peru · 28–30 October 2026</p>
+    <h1 id="hero-title">Shared Task Results</h1>
+    <p class="lead">Automatic Speech Recognition (ASR) and Language Resources for Indigenous Languages of South America</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#task1">See the results</a>
+      <a class="btn btn-session" href="https://meet.google.com/rcv-ygqu-dpp">Join the Shared Task session</a>
+    </div>
+  </div>
+  <figure>
+    <div class="photo">
+      <img src="img/community.jpg" width="1600" height="791"
+         alt="Quechua community members, adults and children, gathered with a baby alpaca in front of an adobe wall decorated with woven textiles and banners in Nuñoa, Puno">
+      <a class="credit" href="https://elwin.huamanquispe.com/">Photo: Elwin Huaman</a>
+    </div>
+    <figcaption>Community members in Nuñoa (Melgar, Puno), Peru.</figcaption>
+  </figure>
+</section>
+
+<ol class="timeline" aria-label="Key dates">
+  <li class="done"><time datetime="2026-08-10">10 Aug</time><span class="label">Registration opens</span></li>
+  <li class="done"><time datetime="2026-08-24">24 Aug</time><span class="label">Datasets released</span></li>
+  <li class="done"><time datetime="2026-09-21">21 Sep</time><span class="label">Registration closes</span></li>
+  <li class="done"><time datetime="2026-09-30">30 Sep</time><span class="label">Task 1 test set</span></li>
+  <li class="done"><time datetime="2026-10-11">11 Oct</time><span class="label">Abstracts due</span></li>
+  <li class="done"><time datetime="2026-10-18">18 Oct</time><span class="label">Results, papers &amp; videos due</span></li>
+  <li class="now" aria-current="step"><time datetime="2026-10-28">28–30 Oct</time><span class="label">Results announced <span class="tag now-tag">Now</span></span></li>
+</ol>
+
+<aside class="box session" id="session" aria-labelledby="session-title">
+  <h2 id="session-title">Shared Task session</h2>
+  <p><strong>Friday 30 October 2026, 09:30–10:30</strong> (Peru time, UTC−5) · online<br>
+  Results announcement and presentations by the winning teams of Task 1 and Task 3.</p>
+  <a class="btn primary" href="https://meet.google.com/rcv-ygqu-dpp">Join on Google Meet</a>
+</aside>
+
+<section class="partners" aria-labelledby="partners-title">
+  <h2 id="partners-title">Organised and supported by</h2>
+  <!-- The list is duplicated by assets/site.js to scroll seamlessly; edit logos here only. -->
+  <div class="marquee">
+  <ul class="logos track">
+    <li><a class="logo" href="https://simbig.org"><!-- TODO: img/logos/simbig.png has no transparency (black text on black); use <img src="img/logos/simbig.png" alt="SIMBig"> once replaced --><span class="wordmark wordmark-lg">SIMBig</span></a></li>
+    <li><a class="logo" href="https://www.chia.cam.ac.uk"><img src="img/logos/chia-trim.png" alt="Centre for Human-Inspired Artificial Intelligence (CHIA), University of Cambridge" loading="lazy"></a></li>
+    <li><a class="logo" href="https://www.c2d3.cam.ac.uk"><img src="img/logos/c2d3.png" alt="Cambridge Centre for Data-Driven Discovery (C2D3)" loading="lazy"></a></li>
+    <li><a class="logo" href="https://www.cam.ac.uk"><img src="img/logos/cambridge.png" alt="University of Cambridge" loading="lazy"></a></li>
+    <li><a class="logo" href="https://www.inalco.fr"><img src="img/logos/ertim-inalco.png" alt="ERTIM, Inalco" loading="lazy"></a></li>
+    <li><a class="logo" href="https://quechuabase.org"><img src="img/logos/quechuabase.png" alt="QuechuaBase" loading="lazy"></a></li>
+  </ul>
+  </div>
+</section>
+
+<!-- ============================================================ OVERVIEW -->
+<h2 id="overview">Overview</h2>
+<p>The SIMBig 2026 Shared Task promoted open and reproducible speech technology for Indigenous languages of South America, starting with Puno Quechua.
+It had three tasks: an ASR benchmark on Puno Quechua (Task 1), ASR for any South American Indigenous language without an existing system (Task 2),
+and educational or literacy resources (Task 3). Each submission comprised a system description paper, reviewed by at least two independent reviewers, and a 15-minute video presentation.</p>
+
+<div class="stats">
+  <div class="stat"><b>35</b><span>registered teams</span></div>
+  <div class="stat"><b>14</b><span>countries</span></div>
+  <div class="stat"><b>2</b><span>papers accepted</span></div>
+</div>
+<p class="muted">Registrations by task: Task 1 · 28 teams, Task 2 · 15 teams, Task 3 · 17 teams (teams could register for more than one task).
+Teams came from Bolivia, Brazil, Canada, Colombia, Germany, India, Iran, Italy, Mexico, Nigeria, Peru, Switzerland, Tunisia and the United States.</p>
+
+<div class="box">
+  <h3>Key findings</h3>
+  <ul>
+    <li><strong>Best Task 1 system:</strong> Chana-L (team Chana-NLP) reached 11.93% WER and 2.57% CER, against 18.81% WER for the strongest organiser baseline on the same test set (omniLLM7B_v2).
+    Seven systems from five teams beat that baseline.</li>
+    <li><strong>Spontaneous speech is harder:</strong> all twelve participant systems had a higher WER on spontaneous than on scripted speech, by 2.0–15.8 points.</li>
+    <li><strong>Speaker gender gap:</strong> eleven of twelve systems had a higher WER for female speakers (by up to 5.6 points), a gap that warrants further analysis of speaker balance in the data.</li>
+    <li><strong>Error profile:</strong> substitutions account for about 80–84% of word errors for every system, while deletion and insertion rates each stay below 4.4%.</li>
+  </ul>
+</div>
+
+<!-- ============================================================ TASK 1 -->
+<h2 id="task1">Task 1: Puno Quechua ASR Baseline</h2>
+<p>Participants built ASR systems for Puno Quechua using the Mozilla Common Voice Puno Quechua datasets, which contain scripted and spontaneous speech.
+Systems were evaluated on a held-out <a href="data.html#test-set">test set</a> of 659 clips (59 minutes, 7 speakers). The primary metric is <strong>word error rate (WER)</strong>; character error rate (CER) and chrF are also reported.</p>
+
+<p class="muted">Click a column header to sort. Lower is better for all error rates and Levenshtein; higher is better for chrF.
+S / D / I = word-level substitution / deletion / insertion rates.</p>
+<div class="wrap lb-wrap">
+<table id="lb" class="sortable">
+<thead><tr><th>Rank</th><th class="model">Team</th><th>WER (%)</th><th>CER (%)</th><th>CER no diacritics (%)</th><th>CER no space (%)</th><th>chrF</th><th>Levenshtein / utt</th><th>S (%)</th><th>D (%)</th><th>I (%)</th><th>WER female (%)</th><th>WER male (%)</th><th>WER scripted (%)</th><th>WER spontaneous (%)</th><th>Evaluated at</th></tr></thead>
+<tbody>
+<tr class="rank1"><td data-v="1"><span aria-hidden="true">🥇</span><span class="sr-only">1st place</span></td><td class="model" data-v="Chana-L">Chana-L</td><td data-v="11.929915">11.93</td><td data-v="2.572491">2.57</td><td data-v="2.560595">2.56</td><td data-v="2.532645">2.53</td><td data-v="94.866557">94.87</td><td data-v="1.312595">1.31</td><td data-v="9.533625">9.53</td><td data-v="1.365627">1.37</td><td data-v="1.030662">1.03</td><td data-v="12.292020">12.29</td><td data-v="10.790598">10.79</td><td data-v="10.084580">10.08</td><td data-v="13.139932">13.14</td><td data-v="2026-10-18 16:14 UTC">2026-10-18 16:14 UTC</td></tr>
+<tr class="rank1"><td data-v="1"><span aria-hidden="true">🥇</span><span class="sr-only">1st place</span></td><td class="model" data-v="Chana-M">Chana-M</td><td data-v="12.110281">12.11</td><td data-v="2.637918">2.64</td><td data-v="2.626022">2.63</td><td data-v="2.605006">2.61</td><td data-v="94.735291">94.74</td><td data-v="1.345979">1.35</td><td data-v="9.739758">9.74</td><td data-v="1.339861">1.34</td><td data-v="1.030662">1.03</td><td data-v="12.835314">12.84</td><td data-v="9.829060">9.83</td><td data-v="9.889395">9.89</td><td data-v="13.566553">13.57</td><td data-v="2026-10-18 16:14 UTC">2026-10-18 16:14 UTC</td></tr>
+<tr class="rank2"><td data-v="2"><span aria-hidden="true">🥈</span><span class="sr-only">2nd place</span></td><td class="model" data-v="Espiral">Espiral</td><td data-v="13.372842">13.37</td><td data-v="2.795539">2.80</td><td data-v="2.786617">2.79</td><td data-v="2.766174">2.77</td><td data-v="94.279492">94.28</td><td data-v="1.426404">1.43</td><td data-v="10.976552">10.98</td><td data-v="1.185262">1.19</td><td data-v="1.211028">1.21</td><td data-v="13.548387">13.55</td><td data-v="12.820513">12.82</td><td data-v="10.865322">10.87</td><td data-v="15.017065">15.02</td><td data-v="2026-10-20 08:42 UTC">2026-10-20 08:42 UTC</td></tr>
+<tr class="rank1"><td data-v="1"><span aria-hidden="true">🥇</span><span class="sr-only">1st place</span></td><td class="model" data-v="Chana-S">Chana-S</td><td data-v="13.733574">13.73</td><td data-v="2.941264">2.94</td><td data-v="2.929368">2.93</td><td data-v="2.914186">2.91</td><td data-v="94.082815">94.08</td><td data-v="1.500759">1.50</td><td data-v="11.285751">11.29</td><td data-v="1.262561">1.26</td><td data-v="1.185262">1.19</td><td data-v="14.465195">14.47</td><td data-v="11.431624">11.43</td><td data-v="10.800260">10.80</td><td data-v="15.656997">15.66</td><td data-v="2026-10-18 16:14 UTC">2026-10-18 16:14 UTC</td></tr>
+<tr class="rank3"><td data-v="3"><span aria-hidden="true">🥉</span><span class="sr-only">3rd place</span></td><td class="model" data-v="Uyariq">Uyariq</td><td data-v="14.867302">14.87</td><td data-v="3.081041">3.08</td><td data-v="3.072119">3.07</td><td data-v="3.029306">3.03</td><td data-v="93.773959">93.77</td><td data-v="1.572079">1.57</td><td data-v="12.007215">12.01</td><td data-v="1.468694">1.47</td><td data-v="1.391394">1.39</td><td data-v="15.449915">15.45</td><td data-v="13.034188">13.03</td><td data-v="11.711126">11.71</td><td data-v="16.936860">16.94</td><td data-v="2026-10-20 08:43 UTC">2026-10-20 08:43 UTC</td></tr>
+<tr><td data-v="4">4</td><td class="model" data-v="🐣_en_🏡">🐣_en_🏡</td><td data-v="16.104097">16.10</td><td data-v="3.366543">3.37</td><td data-v="3.357621">3.36</td><td data-v="3.308884">3.31</td><td data-v="93.121414">93.12</td><td data-v="1.717754">1.72</td><td data-v="13.140943">13.14</td><td data-v="1.520227">1.52</td><td data-v="1.442927">1.44</td><td data-v="17.045840">17.05</td><td data-v="13.141026">13.14</td><td data-v="14.899154">14.90</td><td data-v="16.894198">16.89</td><td data-v="2026-10-20 08:42 UTC">2026-10-20 08:42 UTC</td></tr>
+<tr><td data-v="5">5</td><td class="model" data-v="Innova">Innova</td><td data-v="17.160526">17.16</td><td data-v="3.473606">3.47</td><td data-v="3.467658">3.47</td><td data-v="3.443739">3.44</td><td data-v="92.751636">92.75</td><td data-v="1.772382">1.77</td><td data-v="14.300438">14.30</td><td data-v="1.803659">1.80</td><td data-v="1.056429">1.06</td><td data-v="17.860781">17.86</td><td data-v="14.957265">14.96</td><td data-v="14.834092">14.83</td><td data-v="18.686007">18.69</td><td data-v="2026-10-18 15:28 UTC">2026-10-18 15:28 UTC</td></tr>
+<tr class="baseline"><td data-v="">—</td><td class="model" data-v="omniLLM7B_v2">omniLLM7B_v2 <span class="tag">Baseline</span></td><td data-v="18.809585">18.81</td><td data-v="3.497398">3.50</td><td data-v="3.452788">3.45</td><td data-v="3.456896">3.46</td><td data-v="92.202746">92.20</td><td data-v="1.784522">1.78</td><td data-v="16.207163">16.21</td><td data-v="1.571760">1.57</td><td data-v="1.030662">1.03</td><td data-v="17.521222">17.52</td><td data-v="22.863248">22.86</td><td data-v="20.559532">20.56</td><td data-v="17.662116">17.66</td><td data-v="2026-10-27 10:23 UTC">2026-10-27 10:23 UTC</td></tr>
+<tr><td data-v="6">6</td><td class="model" data-v="CSILAB">CSILAB</td><td data-v="19.711415">19.71</td><td data-v="3.812639">3.81</td><td data-v="3.797770">3.80</td><td data-v="3.716738">3.72</td><td data-v="91.936295">91.94</td><td data-v="1.945372">1.95</td><td data-v="16.052564">16.05</td><td data-v="2.499356">2.50</td><td data-v="1.159495">1.16</td><td data-v="20.848896">20.85</td><td data-v="16.132479">16.13</td><td data-v="14.638907">14.64</td><td data-v="23.037543">23.04</td><td data-v="2026-10-20 08:41 UTC">2026-10-20 08:41 UTC</td></tr>
+<tr><td data-v="7">7</td><td class="model" data-v="QASR">QASR</td><td data-v="23.782530">23.78</td><td data-v="5.061710">5.06</td><td data-v="5.043866">5.04</td><td data-v="4.966615">4.97</td><td data-v="89.674404">89.67</td><td data-v="2.582701">2.58</td><td data-v="19.479516">19.48</td><td data-v="2.885854">2.89</td><td data-v="1.417161">1.42</td><td data-v="25.127334">25.13</td><td data-v="19.551282">19.55</td><td data-v="17.371503">17.37</td><td data-v="27.986348">27.99</td><td data-v="2026-10-18 15:29 UTC">2026-10-18 15:29 UTC</td></tr>
+<tr><td data-v="8">8</td><td class="model" data-v="USP">USP</td><td data-v="25.792322">25.79</td><td data-v="4.722677">4.72</td><td data-v="4.701859">4.70</td><td data-v="4.644279">4.64</td><td data-v="89.611625">89.61</td><td data-v="2.409712">2.41</td><td data-v="21.592373">21.59</td><td data-v="3.478485">3.48</td><td data-v="0.721464">0.72</td><td data-v="26.383701">26.38</td><td data-v="23.931624">23.93</td><td data-v="23.031880">23.03</td><td data-v="27.602389">27.60</td><td data-v="2026-10-18 15:30 UTC">2026-10-18 15:30 UTC</td></tr>
+<tr class="baseline"><td data-v="">—</td><td class="model" data-v="xlsr-cpt-silver">xlsr-cpt-silver <span class="tag">Baseline</span></td><td data-v="27.415615">27.42</td><td data-v="5.421561">5.42</td><td data-v="5.388848">5.39</td><td data-v="5.302108">5.30</td><td data-v="88.637912">88.64</td><td data-v="2.766313">2.77</td><td data-v="22.545736">22.55</td><td data-v="3.066220">3.07</td><td data-v="1.803659">1.80</td><td data-v="28.047538">28.05</td><td data-v="25.427350">25.43</td><td data-v="21.145088">21.15</td><td data-v="31.527304">31.53</td><td data-v="2026-10-20 10:33 UTC">2026-10-20 10:33 UTC</td></tr>
+<tr class="baseline"><td data-v="">—</td><td class="model" data-v="xlsr-cpt-validated">xlsr-cpt-validated <span class="tag">Baseline</span></td><td data-v="30.533368">30.53</td><td data-v="6.272119">6.27</td><td data-v="6.236431">6.24</td><td data-v="6.232938">6.23</td><td data-v="86.704421">86.70</td><td data-v="3.198786">3.20</td><td data-v="25.663489">25.66</td><td data-v="3.349652">3.35</td><td data-v="1.520227">1.52</td><td data-v="31.646859">31.65</td><td data-v="27.029915">27.03</td><td data-v="22.121015">22.12</td><td data-v="36.049488">36.05</td><td data-v="2026-10-26 09:11 UTC">2026-10-26 09:11 UTC</td></tr>
+<tr><td data-v="9">9</td><td class="model" data-v="Cristian_Ahumada">Cristian_Ahumada</td><td data-v="36.330843">36.33</td><td data-v="7.542007">7.54</td><td data-v="7.503346">7.50</td><td data-v="7.400585">7.40</td><td data-v="84.390532">84.39</td><td data-v="3.848255">3.85</td><td data-v="30.224169">30.22</td><td data-v="4.071116">4.07</td><td data-v="2.035558">2.04</td><td data-v="36.977929">36.98</td><td data-v="34.294872">34.29</td><td data-v="26.805465">26.81</td><td data-v="42.576792">42.58</td><td data-v="2026-10-20 08:41 UTC">2026-10-20 08:41 UTC</td></tr>
+<tr><td data-v="10">10</td><td class="model" data-v="UCSP">UCSP</td><td data-v="39.963927">39.96</td><td data-v="9.718959">9.72</td><td data-v="9.677323">9.68</td><td data-v="9.051738">9.05</td><td data-v="83.699802">83.70</td><td data-v="4.959029">4.96</td><td data-v="31.924762">31.92</td><td data-v="4.380314">4.38</td><td data-v="3.658851">3.66</td><td data-v="39.728353">39.73</td><td data-v="40.705128">40.71</td><td data-v="36.629798">36.63</td><td data-v="42.150171">42.15</td><td data-v="2026-10-18 15:29 UTC">2026-10-18 15:29 UTC</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Final leaderboard, last updated 27 October 2026, 10:24 UTC. Teams are ranked by the WER of their best model;
+all models from the same team share that team's rank (Chana-L, Chana-M and Chana-S are three models from team Chana-NLP).
+Rows marked <em>Baseline</em> are the organisers' own models, evaluated on the same test set for reference and not ranked; they differ from the initial baselines released at the start of the task (see <a href="data.html#baselines">Data &amp; baselines</a>).</p>
+
+<h3>Winner</h3>
+<article class="card winner" id="winner-task1">
+  <span class="badge">🥇 Task 1 Winner</span>
+  <h3>Yachachiq–Yachakuq: Teacher–Student Transfer and Candidate Reranking for Puno Quechua ASR</h3>
+  <p class="authors">Félix Arturo Oncevay Marcos (University of Edinburgh), Aaron Arana, Flavio Corvetto, Jafeth Cuyo, Daniel Malca, Pool Pocco, Eliezer Villarreal and Juan Zavala (PUCP)<br>Team Chana-NLP · Best model: Chana-L (11.93% WER)</p>
+  <div class="grid">
+    <!-- <div class="video">
+      When available, replace this text with:
+      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="SIMBig 2026 Task 1 Winner presentation" loading="lazy"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      Video presentation coming soon
+    </div> -->
+    <div>
+      <!-- TODO: <p class="abstract">Abstract</p> -->
+      <p class="meta">Presented online at the <a href="#session">Shared Task session</a>, 30 October 2026.</p>
+      <!-- TODO: replace with links when available: <a href="…">Paper</a> · <a href="…">Code</a> · <a href="…">Model</a> · <a href="…">Watch on YouTube</a> -->
+      <p class="meta muted">Paper, code, model and video: coming soon.</p>
+    </div>
+  </div>
+</article>
+
+<!-- Optional: featured Task 1 submissions. Copy the card above, change the class to "card" and the badge to "Featured submission". -->
+
+<!-- ============================================================ TASK 2 -->
+<h2 id="task2">Task 2: ASR for Any Indigenous Language of South America</h2>
+<p>Teams were invited to build the first ASR system for a South American Indigenous language that had none, and to release their train, dev and test splits,
+with a test set of at least 30 minutes.</p>
+<div class="box">
+  <h3>Outcome: postponed</h3>
+  <p style="margin:0">Due to a lack of entries for Task 2 (only one proposal), the competition for this task has been postponed.
+  This outcome underscores a strategic gap and opportunity: we need to focus on bringing NLP resources to these communities, building capacity,
+  lowering barriers to participation, and ensuring future events are more representative.</p>
+</div>
+
+<!-- ============================================================ TASK 3 -->
+<h2 id="task3">Task 3: Educational/Literacy Resource based on Language Datasets</h2>
+<p>Teams created resources such as websites, tutorials, notebooks, visualisations, videos or learning platforms that help people learn or explore an Indigenous language, or reuse its datasets.
+Submissions were judged on usefulness to learners and communities, openness and reusability, technical quality, and clarity of presentation.</p>
+
+<article class="card winner" id="winner-task3">
+  <span class="badge">🥇 Task 3 Winner</span>
+  <h3>Wasi-y-kuna-pi: Hearing Every Suffix in a Talking Morphology Reader for Puno Quechua</h3>
+  <p class="authors">Pierr Daniel Chino Lurita and Jadson Castro Gertrudes (CSI Lab)<br>Team CSILAB · Language: Puno Quechua</p>
+  <div class="grid">
+    <!--  <div class="video">
+      When available, replace this text with:
+      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="SIMBig 2026 Task 3 Winner presentation" loading="lazy"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      Video presentation coming soon
+    </div> -->
+    <div>
+      <!-- TODO: <p class="abstract">Abstract</p> -->
+      <p class="meta">Presented online at the <a href="#session">Shared Task session</a>, 30 October 2026.</p>
+      <!-- TODO: replace with links when available: <a href="…">Open the resource</a> · <a href="…">Paper</a> · <a href="…">Code</a> · <a href="…">Watch on YouTube</a> -->
+      <p class="meta muted">Resource, paper, code and video: coming soon.</p>
+    </div>
+  </div>
+</article>
+
+<!-- Featured submissions (hidden until there are entries): remove these comment markers to show the section.
+<h3>Featured submissions</h3>
+<article class="card">
+  <span class="badge">Featured submission</span>
+  <h3><span class="todo">TODO: Title</span></h3>
+  <p class="authors"><span class="todo">TODO: Authors (Affiliations)</span> · Language(s): <span class="todo">TODO</span></p>
+  <div class="grid">
+    <div class="video"><!~~ TODO: YouTube iframe ~~>Video presentation: <span class="todo">YouTube embed</span></div>
+    <div>
+      <p class="abstract"><span class="todo">TODO: Abstract.</span></p>
+      <p class="meta"><a href="TODO-resource">Open the resource</a> · <a href="TODO-paper">Paper</a> · <a href="TODO-video">Watch on YouTube</a></p>
+    </div>
+  </div>
+</article>
+<!~~ Duplicate the card above for each additional featured submission. ~~>
+-->
+
+<!-- ============================================================ AWARDS -->
+<h2 id="awards">Awards</h2>
+<div class="wrap">
+<table class="plain">
+<thead><tr><th>Task</th><th>Award</th><th>Team</th><th>Prize</th></tr></thead>
+<tbody>
+<tr><td>Task 1: Puno Quechua ASR Baseline</td><td>Winner</td><td>Chana-NLP (PUCP, University of Edinburgh)</td><td>USD 100 + SIMBig 2026 registration</td></tr>
+<tr><td>Task 2: ASR for Any Indigenous Language of South America</td><td>Postponed</td><td>—</td><td>—</td></tr>
+<tr><td>Task 3: Educational/Literacy Resource based on Language Datasets</td><td>Winner</td><td>CSILAB (CSI Lab)</td><td>USD 50 + SIMBig 2026 registration</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Papers from the winning teams will appear, after revision in response to reviewer feedback, in the Springer Communications in Computer and Information Science (CCIS) series.</p>
+
+<!-- ============================================================ CITE -->
+<h2 id="cite">How to cite</h2>
+<p>If you use the data, baselines or results, please cite the following papers:</p>
+<pre><code>@inproceedings{simbig2026sharedtask,
+  title     = {Findings of the SIMBig 2026 Shared Task on Automatic Speech Recognition
+               and Language Resources for Indigenous Languages of South America},
+  author    = {Huaman, Elwin and Cordova, Johanna},
+  booktitle = {Information Management and Big Data (SIMBig 2026)},
+  series    = {Communications in Computer and Information Science},
+  publisher = {Springer},
+  year      = {2026},
+  note      = {TODO: volume, pages, DOI}
+}
+
+@inproceedings{HuamanGCK2026,
+  title     = {Building Community-Centred {NLP} Resources for {P}uno {Q}uechua},
+  author    = {Huaman, Elwin and Gamarra Lafuente, Adrian and Cordova, Johanna and Korhonen, Anna},
+  booktitle = {Proceedings of the Sixth Workshop on {NLP} for Indigenous Languages of the {A}mericas ({A}mericas{NLP})},
+  month     = {jul},
+  year      = {2026},
+  address   = {San Diego, California, USA},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2026.americasnlp-6.13/},
+  doi       = {10.18653/v1/2026.americasnlp-6.13},
+  pages     = {147--152},
+  isbn      = {979-8-89176-415-6}
+}
+
+@inproceedings{HuamanHHQ2026,
+  author    = {Elwin Huaman and Jorge Luis Huaman and Wendi Huaman and Ninfa Quispe},
+  title     = {Quechua Speech Datasets in Common Voice: The Case of Puno Quechua},
+  booktitle = {Proceedings of the Information Management and Big Data (SIMBig 2025), Lima, Peru, October 29-31, 2025},
+  year      = {2026},
+  publisher = {Springer Nature Switzerland},
+  pages     = {184--193},
+  isbn      = {978-3-032-20322-9},
+  series    = {Communications in Computer and Information Science}
+}
+
+@unpublished{CordovaWZCMH26,
+  author = {Johanna Cordova and Ilaine Wang and Jocelyn Zaruma and Oumaya Chelbi and Alexis Malderez and Elwin Huaman},
+  title  = {{Creating Small ASR Models For Low-resource Languages From Similar Languages: The Cases Of Betawi and Puno Quechua}},
+  note   = {Preprint, HAL Id: hal-05624964},
+  year   = {2026},
+  month  = may,
+  url    = {https://hal.science/hal-05624964}
+}</code></pre>
+
+<!-- ============================================================ ACK -->
+<h2 id="ack">Acknowledgements</h2>
+<p>We thank all participating teams, and the reviewers and Programme Committee for their careful evaluation.
+We are grateful to the Puno Quechua speakers and communities who contributed recordings, and to Mozilla Common Voice for hosting the datasets.
+The shared task was organised and supported by SIMBig, the Centre for Human-Inspired AI (CHIA) and the Cambridge Centre for Data-Driven Discovery (C2D3) at the University of Cambridge, ERTIM at Inalco, and QuechuaBase.</p>
+
+<h3>Organisers</h3>
+<p><strong>Programme Chairs:</strong> Elwin Huaman (University of Cambridge, UK), Johanna Cordova (ERTIM, Inalco, France),
+Juan Antonio Lossio-Ventura (National Institutes of Health, USA), Hugo Alatrista-Salas (De Vinci Research Centre, France).<br>
+<strong>Advisory Committee:</strong> Anna Korhonen (University of Cambridge, UK), Damien Nouvel (ERTIM, Inalco, France).</p>
+
+<script>
+(function () {
+  var table = document.getElementById("lb"), tbody = table.tBodies[0];
+  var ths = table.tHead.rows[0].cells;
+  Array.prototype.forEach.call(ths, function (th, idx) {
+    th.addEventListener("click", function () {
+      var asc = !th.classList.contains("asc");
+      Array.prototype.forEach.call(ths, function (t) { t.classList.remove("asc", "desc"); });
+      th.classList.add(asc ? "asc" : "desc");
+      var rows = Array.prototype.slice.call(tbody.rows);
+      rows.sort(function (a, b) {
+        var x = a.cells[idx].dataset.v, y = b.cells[idx].dataset.v;
+        if (x === "" && y === "") return 0;
+        if (x === "") return 1;           // empty values (e.g. baseline) always last
+        if (y === "") return -1;
+        var nx = parseFloat(x), ny = parseFloat(y);
+        var r = (isNaN(nx) || isNaN(ny)) ? x.localeCompare(y) : nx - ny;
+        return asc ? r : -r;
+      });
+      rows.forEach(function (r) { tbody.appendChild(r); });
+    });
+  });
+})();
+</script>
+</main>
+<footer class="site">
+  Contact: Elwin Huaman ·
+  Videos: <a href="https://www.youtube.com/@QuechuaBase">youtube.com/@QuechuaBase</a> ·
+  Official call: <a href="https://simbig.org/SIMBig2026/en/sharedtask.html">simbig.org</a> ·
+  Last updated: 29 October 2026
+</footer>
+</body>
+</html>
