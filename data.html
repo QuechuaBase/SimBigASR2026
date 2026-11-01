@@ -7,8 +7,8 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Data and Baselines · SIMBig 2026 Shared Task</title>
 <meta name="description" content="Datasets, baseline systems and evaluation protocol of the SIMBig 2026 Shared Task.">
-<link rel="stylesheet" href="assets/style.css?v=2026-10-29l">
-<script src="assets/site.js?v=2026-10-29l"></script>
+<link rel="stylesheet" href="assets/style.css?v=2026-11-01b">
+<script src="assets/site.js?v=2026-11-01b"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -53,17 +53,15 @@
           <li><a href="data.html#cite-data">Citation &amp; licence</a></li>
         </ul>
       </li>
-      <!-- Hidden from the menu for now:
       <li class="has-sub">
         <a href="videos.html">Videos</a><button type="button" class="sub-btn" aria-expanded="false" aria-controls="sub-videos"><span class="sr-only">Videos sections</span></button>
         <ul class="sub" id="sub-videos">
-          <li><a href="videos.html#intro">Introduction</a></li>
+          <li><a href="videos.html#session-video">Session recording</a></li>
           <li><a href="videos.html#v-task1">Task 1</a></li>
           <li><a href="videos.html#v-task3">Task 3</a></li>
           <li><a href="videos.html#playlist">Full playlist</a></li>
         </ul>
       </li>
-      -->
     </ul>
   </nav>
   <div class="a11y">
@@ -215,7 +213,31 @@ The test set includes a <code>qxp.tsv</code> template listing every file; teams 
 
 <h3>How to cite</h3>
 <p>If you use this data, the baseline models or the results in your research, please cite the following papers, together with the <a href="index.html#cite">shared task overview</a>:</p>
-<pre><code>@inproceedings{HuamanGCK2026,
+<ol class="refs">
+  <li id="ref-CordovaWZCMH26">
+    <p class="apa" id="apa-CordovaWZCMH26">Cordova, J., Wang, I., Zaruma, J., Chelbi, O., Malderez, A., &amp; Huaman, E. (2026). <em>Creating small ASR models for low-resource languages from similar languages: The cases of Betawi and Puno Quechua</em> [Preprint]. HAL. <a href="https://hal.science/hal-05624964">https://hal.science/hal-05624964</a></p>
+    <div class="ref-actions">
+      <button type="button" class="btn sm" data-copy="apa-CordovaWZCMH26">Copy APA</button>
+      <button type="button" class="btn sm" data-copy="bib-CordovaWZCMH26">Copy BibTeX</button>
+      <button type="button" class="btn sm" aria-expanded="false" aria-controls="bibbox-CordovaWZCMH26" data-toggle>Show BibTeX</button>
+    </div>
+    <pre id="bibbox-CordovaWZCMH26" hidden><code id="bib-CordovaWZCMH26">@unpublished{CordovaWZCMH26,
+  author = {Johanna Cordova and Ilaine Wang and Jocelyn Zaruma and Oumaya Chelbi and Alexis Malderez and Elwin Huaman},
+  title  = {{Creating Small ASR Models For Low-resource Languages From Similar Languages: The Cases Of Betawi and Puno Quechua}},
+  note   = {Preprint, HAL Id: hal-05624964},
+  year   = {2026},
+  month  = may,
+  url    = {https://hal.science/hal-05624964}
+}</code></pre>
+  </li>
+  <li id="ref-HuamanGCK2026">
+    <p class="apa" id="apa-HuamanGCK2026">Huaman, E., Gamarra Lafuente, A., Cordova, J., &amp; Korhonen, A. (2026). Building community-centred NLP resources for Puno Quechua. In <em>Proceedings of the Sixth Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP)</em> (pp. 147–152). Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/2026.americasnlp-6.13">https://doi.org/10.18653/v1/2026.americasnlp-6.13</a></p>
+    <div class="ref-actions">
+      <button type="button" class="btn sm" data-copy="apa-HuamanGCK2026">Copy APA</button>
+      <button type="button" class="btn sm" data-copy="bib-HuamanGCK2026">Copy BibTeX</button>
+      <button type="button" class="btn sm" aria-expanded="false" aria-controls="bibbox-HuamanGCK2026" data-toggle>Show BibTeX</button>
+    </div>
+    <pre id="bibbox-HuamanGCK2026" hidden><code id="bib-HuamanGCK2026">@inproceedings{HuamanGCK2026,
   title     = {Building Community-Centred {NLP} Resources for {P}uno {Q}uechua},
   author    = {Huaman, Elwin and Gamarra Lafuente, Adrian and Cordova, Johanna and Korhonen, Anna},
   booktitle = {Proceedings of the Sixth Workshop on {NLP} for Indigenous Languages of the {A}mericas ({A}mericas{NLP})},
@@ -227,9 +249,16 @@ The test set includes a <code>qxp.tsv</code> template listing every file; teams 
   doi       = {10.18653/v1/2026.americasnlp-6.13},
   pages     = {147--152},
   isbn      = {979-8-89176-415-6}
-}
-
-@inproceedings{HuamanHHQ2026,
+}</code></pre>
+  </li>
+  <li id="ref-HuamanHHQ2026">
+    <p class="apa" id="apa-HuamanHHQ2026">Huaman, E., Huaman, J. L., Huaman, W., &amp; Quispe, N. (2026). Quechua speech datasets in Common Voice: The case of Puno Quechua. In <em>Information Management and Big Data (SIMBig 2025)</em> (pp. 184–193). Communications in Computer and Information Science. Springer Nature Switzerland.</p>
+    <div class="ref-actions">
+      <button type="button" class="btn sm" data-copy="apa-HuamanHHQ2026">Copy APA</button>
+      <button type="button" class="btn sm" data-copy="bib-HuamanHHQ2026">Copy BibTeX</button>
+      <button type="button" class="btn sm" aria-expanded="false" aria-controls="bibbox-HuamanHHQ2026" data-toggle>Show BibTeX</button>
+    </div>
+    <pre id="bibbox-HuamanHHQ2026" hidden><code id="bib-HuamanHHQ2026">@inproceedings{HuamanHHQ2026,
   author    = {Elwin Huaman and Jorge Luis Huaman and Wendi Huaman and Ninfa Quispe},
   title     = {Quechua Speech Datasets in Common Voice: The Case of Puno Quechua},
   booktitle = {Proceedings of the Information Management and Big Data (SIMBig 2025), Lima, Peru, October 29-31, 2025},
@@ -238,24 +267,18 @@ The test set includes a <code>qxp.tsv</code> template listing every file; teams 
   pages     = {184--193},
   isbn      = {978-3-032-20322-9},
   series    = {Communications in Computer and Information Science}
-}
-
-@unpublished{CordovaWZCMH26,
-  author = {Johanna Cordova and Ilaine Wang and Jocelyn Zaruma and Oumaya Chelbi and Alexis Malderez and Elwin Huaman},
-  title  = {{Creating Small ASR Models For Low-resource Languages From Similar Languages: The Cases Of Betawi and Puno Quechua}},
-  note   = {Preprint, HAL Id: hal-05624964},
-  year   = {2026},
-  month  = may,
-  url    = {https://hal.science/hal-05624964}
 }</code></pre>
+  </li>
+</ol>
+<p class="muted"><a href="simbig2026-shared-task.bib" download>Download all references (.bib)</a></p>
 
 <p class="muted">We thank the Puno Quechua speakers who contributed their voices, and Mozilla Common Voice for hosting the data.</p>
 </main>
 <footer class="site">
   Contact: Elwin Huaman ·
-  Videos: <a href="https://www.youtube.com/@QuechuaBase">youtube.com/@QuechuaBase</a> ·
+  Videos: <a href="https://www.youtube.com/playlist?list=PLJJ3PrLgcIiw">YouTube playlist</a> ·
   Official call: <a href="https://simbig.org/SIMBig2026/en/sharedtask.html">simbig.org</a> ·
-  Last updated: 29 October 2026
+  Last updated: 1 November 2026
 </footer>
 </body>
 </html>

@@ -250,3 +250,18 @@ table.plain th, table.plain td { text-align:left; white-space:normal; }
 
 pre { background:var(--head); border:1px solid var(--line); border-radius:8px; padding:1rem; overflow-x:auto; font-size:.85rem; }
 footer.site { max-width:980px; margin:3rem auto 0; padding:1rem 16px 2rem; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
+.cards-3 .video { margin-bottom:.75rem; }
+/* References (How to cite) */
+.refs { list-style:none; padding:0; margin:1rem 0; }
+.refs li { border:1px solid var(--line); border-radius:8px; background:var(--card); padding:1rem 1.25rem; margin:0 0 .75rem; }
+.refs .apa { margin:0 0 .75rem; padding-left:2em; text-indent:-2em; line-height:1.55; }
+.refs .apa a { overflow-wrap:anywhere; }
+.ref-actions { display:flex; flex-wrap:wrap; gap:.5rem; }
+.btn.sm { padding:.3rem .7rem; font-size:.85rem; background:var(--bg); color:var(--fg); cursor:pointer; font:inherit; font-size:.85rem; }
+.btn.sm[aria-expanded="true"] { border-color:var(--accent); }
+.refs pre { margin:.75rem 0 0; }
+/* Screenshots of Task 3 resources */
+.shot-link { display:block; margin:0 0 .75rem; border-radius:6px; overflow:hidden; border:1px solid var(--line); }
+.shot-link:hover, .shot-link:focus-visible { border-color:var(--accent); }
+.screenshot { display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; object-position:top; }
+.card .meta + .meta { margin-top:.5rem; }
