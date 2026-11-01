@@ -115,4 +115,49 @@
     });
     sync();
   });
+
+  // References: copy APA or BibTeX, and show or hide the BibTeX block
+  document.addEventListener("DOMContentLoaded", function () {
+    var status = document.createElement("p");
+    status.className = "sr-only"; status.setAttribute("aria-live", "polite");
+    document.body.appendChild(status);
+
+    function copy(text) {
+      if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+      return new Promise(function (resolve, reject) {
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+        document.body.removeChild(ta);
+        if (ok) resolve(); else reject();
+      });
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll("[data-copy]"), function (btn) {
+      var label = btn.textContent;
+      btn.addEventListener("click", function () {
+        var src = document.getElementById(btn.getAttribute("data-copy"));
+        if (!src) return;
+        copy(src.textContent.replace(/\s+\n/g, "\n").trim()).then(function () {
+          btn.textContent = "Copied ✓"; status.textContent = label.replace("Copy ", "") + " citation copied to the clipboard";
+        }, function () {
+          btn.textContent = "Copy failed"; status.textContent = "Copy failed: select the text and copy it manually";
+        }).then(function () {
+          setTimeout(function () { btn.textContent = label; }, 2000);
+        });
+      });
+    });
+
+    Array.prototype.forEach.call(document.querySelectorAll("[data-toggle]"), function (btn) {
+      var box = document.getElementById(btn.getAttribute("aria-controls"));
+      btn.addEventListener("click", function () {
+        var open = btn.getAttribute("aria-expanded") !== "true";
+        btn.setAttribute("aria-expanded", String(open));
+        btn.textContent = open ? "Hide BibTeX" : "Show BibTeX";
+        box.hidden = !open;
+      });
+    });
+  });
 })();
